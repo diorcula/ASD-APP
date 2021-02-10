@@ -46,10 +46,10 @@ public class MergeSort {
             }
             index++;
         }
+
         // Copies elements of 1 array into the other
         System.arraycopy(array, left, temp, index, leftEnd - left + 1);
         System.arraycopy(array, right, temp, index, rightEnd - right + 1);
         System.arraycopy(temp, leftStart, array, leftStart, size);
     }
 }
-
