@@ -4,9 +4,11 @@ sorting/Main.java
  sorting.Main
 lists/IHANStack.java
  lists.IHANStack
-sorting/InsertionSort.java
- sorting.InsertionSort
-lists/IHANLinkedList.java
- lists.IHANLinkedList
 sorting/MergeSort.java
  sorting.MergeSort
+lists/IHANLinkedList.java
+ lists.IHANLinkedList
+sorting/InsertionSort.java
+ sorting.InsertionSort
+sorting/QuickSort.java
+ sorting.QuickSort
