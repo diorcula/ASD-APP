@@ -21,7 +21,6 @@ public class QuickSort {
         }
 
         int pivotIndex = partition(arr, start, end);
-        int pivotValue;
 
         // Recursive Divide & Conquer
         quickSort(arr, start, pivotIndex - 1);
@@ -46,8 +45,4 @@ public class QuickSort {
         a[i] = a[j];
         a[j] = t;
     }
-
-//    public static <T> void swap (List<T> l, int i, int j) {
-//        Collections.<T>swap(l, i, j);
-//    }
 }
