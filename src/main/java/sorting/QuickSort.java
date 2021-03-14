@@ -19,7 +19,7 @@ public class QuickSort {
             return;
         }
 
-        int pivotIndex = partition(arr, start, end);
+       int pivotIndex = partition(arr, start, end);
 
         // Recursive Divide & Conquer
         quickSort(arr, start, pivotIndex - 1);

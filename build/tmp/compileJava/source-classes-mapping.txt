@@ -12,3 +12,5 @@ sorting/InsertionSort.java
  sorting.InsertionSort
 sorting/QuickSort.java
  sorting.QuickSort
+recursion/RecursiveFunctions.java
+ recursion.RecursiveFunctions
