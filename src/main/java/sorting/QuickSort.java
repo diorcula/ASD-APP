@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class QuickSort {
     public static void main(String[] args) {
-        int[] test = {5, 3, 4, 2, 1};
+        int[] test = {5, 3, 4, 2, 1, 7, 8, 4, 0, 9, 7, 6, 5, 90, 67, 4567, 2345, 475, 2, 345, 8};
 
         System.out.println(test.length);
         System.out.println("unsorted: " + Arrays.toString(test));
@@ -16,7 +16,6 @@ public class QuickSort {
 
     public static void quickSort(int[] arr, int start, int end) {
         if (start >= end) {
-            // it is sorted then.
             return;
         }
 
@@ -27,9 +26,11 @@ public class QuickSort {
         quickSort(arr, pivotIndex + 1, end);
     }
 
-    public static  int partition(int[] arr, int start, int end) {
+    // Lomuto Partition Scheme
+    public static int partition(int[] arr, int start, int end) {
         int pivotIndex = start;
         int pivotValue = arr[end];
+
         for (int i = start; i < end; i++) {
             if (arr[i] < pivotValue) {
                 swap(arr, i, pivotIndex);
@@ -40,7 +41,7 @@ public class QuickSort {
         return pivotIndex;
     }
 
-    public static void swap (int[] a, int i, int j) {
+    public static void swap(int[] a, int i, int j) {
         int t = a[i];
         a[i] = a[j];
         a[j] = t;
